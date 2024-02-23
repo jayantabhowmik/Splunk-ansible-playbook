@@ -34,7 +34,7 @@
         dest: /opt/splunk/etc/system/local/user-seed.conf
       become: yes
 
-    - name:  Start Splunk for the first time
+    - name:  Starting Splunk
       command: /opt/splunk/bin/splunk start --no-prompt --answer-yes --accept-license
       become: yes
 
